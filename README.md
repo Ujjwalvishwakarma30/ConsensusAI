@@ -1,36 +1,112 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ConsensusAI 🚀
 
-## Getting Started
+ConsensusAI is a Multi-LLM Answer Aggregation Platform that queries multiple AI models, compares their responses, and generates an AI-powered consensus report with winner selection and confidence scoring.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+* Multi-LLM response generation
+* DeepSeek + GPT integration via OpenRouter
+* AI-powered consensus engine
+* Winner model selection
+* Confidence score generation
+* Latency tracking
+* Markdown rendering
+* Modern responsive UI
+* Real-time answer comparison
+
+## Demo Workflow
+
+User Question
+
+↓
+
+DeepSeek Response
+
+GPT Response
+
+↓
+
+AI Judge Engine
+
+↓
+
+Consensus Report
+
+* Winner Model
+* Agreement Points
+* Differences
+* Best Final Answer
+* Confidence Score
+
+## Tech Stack
+
+* Next.js 16
+* TypeScript
+* Tailwind CSS
+* OpenRouter API
+* DeepSeek V3
+* GPT-4o-mini
+
+## Project Structure
+
+```text
+app/
+├── api/
+│   └── ask/
+│       └── route.ts
+
+lib/
+├── models.ts
+├── openrouter.ts
+├── summarizer.ts
+
+app/page.tsx
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+git clone https://github.com/UjjwalVishwakarma30/ConsensusAI.git
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+cd ConsensusAI
 
-## Learn More
+npm install
 
-To learn more about Next.js, take a look at the following resources:
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Create a `.env.local` file:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```env
+OPENROUTER_API_KEY=your_api_key_here
+```
 
-## Deploy on Vercel
+## Current Capabilities
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* Query multiple AI models simultaneously
+* Compare responses side-by-side
+* Generate consensus reports
+* Determine winner model
+* Calculate confidence scores
+* Measure model latency
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Future Enhancements
+
+* Claude Integration
+* Gemini Integration
+* PDF Upload & RAG
+* Chat History
+* Export Reports
+* Streaming Responses
+* Cost Analytics Dashboard
+
+## Author
+
+### Ujjwal Vishwakarma
+
+* GitHub: https://github.com/UjjwalVishwakarma30
+* LinkedIn: https://www.linkedin.com/in/ujjwal-vishwakarma-362791287
+
+## License
+
+MIT License
