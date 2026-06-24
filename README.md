@@ -105,7 +105,7 @@ OPENROUTER_API_KEY=your_api_key_here
 ### Ujjwal Vishwakarma
 
 * GitHub: https://github.com/UjjwalVishwakarma30
-* LinkedIn: https://www.linkedin.com/in/ujjwal-vishwakarma-362791287
+* LinkedIn: https://www.linkedin.com/in/ujjwalvishwakarma30/
 
 ## License
 
